@@ -37,7 +37,7 @@ function init() {
     if (audioSelect.src !== window.location.href) {
       audioSelect.play();
       // Add confetti when the party horn sound is played
-      if (audioSelect.src === `${window.location.origin}/assets/audio/party-horn.mp3`) {
+      if (audioSelect.src.includes("party-horn.mp3")) {
         jsConfetti.addConfetti();
       }
     }
